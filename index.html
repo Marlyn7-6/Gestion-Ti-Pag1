@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal de Bienvenida</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .modal-header {
+            background-color: #343a40; /* Color de fondo del encabezado */
+        }
+        .modal-title {
+            color: white; /* Color del texto del título */
+        }
+        .modal-body {
+            text-align: center; /* Centrar texto en el modal */
+        }
+        .btn-morado {
+            background-color: #6f42c1; /* Color morado */
+            color: white; /* Color del texto del botón */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="welcomeModalLabel">Bienvenido a ITIL</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Este es un resumen de la gestión de servicios de TI. ¡Esperamos que disfrutes tu visita!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-morado" id="acceptButton">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#welcomeModal').modal('show'); // Mostrar modal al cargar la página
+            
+            // Redirigir a blok.html al hacer clic en "Aceptar"
+            $('#acceptButton').click(function() {
+                window.location.href = 'blok.html';
+            });
+        });
+    </script>
+</body>
+</html>

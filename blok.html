@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITIL - Gestión de Servicios de TI</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <style>
+        /* Tipografía principal */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        /* Estilos del encabezado */
+        .header {
+            background-color: #6f42c1;
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+        /* Estilo de sección */
+        .section-title {
+            color: #6f42c1;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        .content-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 30px;
+            margin-top: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        /* Caja decorativa */
+        .wheel-attributes, .timeline-itil {
+            border: 2px solid #6f42c1;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            color: #343a40;
+            background-color: #e9ecef;
+            text-align: center;
+        }
+        .timeline-itil h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        .timeline-itil p {
+            font-style: italic;
+        }
+        /* Estilo de los enlaces del menú */
+        .navbar-dark .navbar-nav .nav-link {
+            color: #fff;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #ffdd57;
+        }
+        /* Estilo del footer */
+        footer {
+            background-color: #6f42c1;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+        footer p {
+            margin: 0;
+        }
+        /* Estilo del carrusel */
+        .carousel-inner {
+            border-radius: 10px;
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+        }
+        /* Mejoras en el diseño de la lista de bibliografía */
+        .content-box ul {
+            padding-left: 20px;
+        }
+        .content-box ul li {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="header">
+        <h1>ITIL - Gestión de Servicios de TI</h1>
+        <p>Guía para la gestión efectiva de servicios de tecnología de la información</p>
+    </header>
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#">ITIL</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#importance">Importancia</a></li>
+                <li class="nav-item"><a class="nav-link" href="#methodologies">Metodologías</a></li>
+                <li class="nav-item"><a class="nav-link" href="#key-concepts">Conceptos Clave</a></li>
+                <li class="nav-item"><a class="nav-link" href="#itil-model">Modelo ITIL</a></li>
+                <li class="nav-item"><a class="nav-link" href="#bibliography">Bibliografía</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección de la importancia de la gestión de servicios de TI -->
+    <section id="importance" class="container mt-5">
+        <h2 class="section-title">Importancia de la Gestión de Servicios de TI</h2>
+        <div class="content-box">
+            <p>La gestión de servicios de TI es fundamental para alinear los servicios tecnológicos con los objetivos estratégicos del negocio. Al enfocarse en procesos como la planificación, implementación, monitoreo y mejora continua, garantiza que los servicios de TI no solo cumplan con los requisitos técnicos, sino también con las expectativas de los usuarios y las necesidades cambiantes del mercado. Esta práctica permite optimizar la eficiencia operativa, minimizando riesgos, tiempos de inactividad y costos asociados a errores o interrupciones. Además, fomenta una comunicación clara y transparente entre el área de TI y las unidades de negocio, promoviendo una mejor toma de decisiones y aumentando la satisfacción del cliente al asegurar que los servicios brindados sean fiables y de alta calidad.
+
+
+
+
+            </p>
+            <div class="wheel-attributes">
+                <p> <strong> Rueda de Atributos: </strong> </p>
+                <ul>
+                    <li><strong>Disponibilidad:</strong> La capacidad de un servicio de TI para estar accesible y operativo en el momento que los usuarios lo requieran, asegurando una mínima interrupción en la prestación del servicio.</li>
+                    <li><strong>Continuidad:</strong> La habilidad para mantener las funciones críticas de TI en caso de interrupciones o desastres, con planes de contingencia y recuperación que garanticen el restablecimiento del servicio.</li>
+                    <li><strong>Capacidad:</strong> La eficiencia de un sistema para gestionar las demandas actuales y futuras sin comprometer el rendimiento, asegurando que los recursos de TI puedan adaptarse a las necesidades del negocio.</li>
+                    <li><strong>Seguridad:</strong> La protección de los servicios y datos de TI frente a amenazas, accesos no autorizados, y vulnerabilidades, manteniendo la confidencialidad, integridad y disponibilidad de la información.</li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Sección de enfoques metodológicos para la gestión de servicios -->
+    <section id="methodologies" class="container mt-5">
+        <h2 class="section-title">Enfoques Metodológicos para la Gestión de Servicios</h2>
+        <div class="content-box">
+            <p>Los enfoques metodológicos en ITIL abarcan el uso de estándares reconocidos, como ISO/IEC 20000, que proporcionan un marco sólido para la gestión de servicios de TI. Además, se incorporan metodologías ágiles que permiten una adaptación rápida y flexible de los servicios a las necesidades cambiantes de los clientes. Estas prácticas no solo optimizan la entrega de servicios, sino que también fomentan una mayor colaboración y comunicación entre los equipos, asegurando que se puedan implementar mejoras continuas y se maximice la satisfacción del cliente.</p>
+
+            <div class="wheel-attributes">
+                <p><strong>Rueda de Atributos:  </strong></p>
+                <ul>
+                    <li><strong>ITIL:</strong> ITIL (Information Technology Infrastructure Library) es un conjunto de buenas prácticas para la gestión de servicios de TI. Se centra en alinear los servicios de TI con las necesidades del negocio y proporciona un marco para la planificación, entrega y soporte de estos servicios de manera eficiente y eficaz.</li>
+                    <li><strong>COBIT:</strong> COBIT (Control Objectives for Information and Related Technologies) es un marco de gestión y gobernanza de TI que ayuda a las organizaciones a crear valor mediante el uso eficaz de la tecnología. Se centra en la gestión de riesgos, la seguridad de la información y la alineación de la TI con los objetivos empresariales.</li>
+                    <li><strong>ISO 20000:</strong> ISO/IEC 20000 es un estándar internacional que especifica los requisitos para un sistema de gestión de servicios (SMS) en organizaciones de TI. Proporciona un marco para la gestión eficaz de servicios y asegura que se cumplan las expectativas de los clientes mediante la mejora continua de los procesos.</li>
+                    <li><strong>DevOps:</strong> DevOps es una práctica que combina el desarrollo de software (Dev) y las operaciones de TI (Ops) para mejorar la colaboración y la productividad. Promueve la automatización de procesos, la integración continua y la entrega continua, facilitando un ciclo de vida del software más ágil y eficiente.</li>
+                    <li><strong>Lean:</strong> Lean es una filosofía de gestión que busca maximizar el valor del cliente minimizando el desperdicio. En el contexto de TI, Lean se centra en la mejora continua, la eficiencia de los procesos y la reducción de tiempos de entrega, permitiendo que las organizaciones ofrezcan servicios más rápidos y de mayor calidad.</li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Sección de conceptos clave de la gestión de servicios -->
+    <section id="key-concepts" class="container mt-5">
+        <h2 class="section-title">Conceptos Clave de la Gestión de Servicios</h2>
+        <div class="content-box">
+            <p>ITIL establece conceptos fundamentales como Servicio, Valor, Cliente y Mejora Continua, que son esenciales para optimizar y estandarizar las operaciones de TI. Estos principios ayudan a las organizaciones a alinearse con las necesidades de los usuarios, a maximizar el valor de los servicios ofrecidos y a fomentar una cultura de mejora constante en la gestión de servicios.</p>
+            .</p>
+            <div class="wheel-attributes">
+                <p><strong>Rueda de Atributos: </strong> </p>
+                <ul>
+                    <li><strong>Servicio:</strong> Un servicio es un medio a través del cual se proporciona valor a los clientes al facilitar un resultado que ellos desean sin la propiedad de costos y riesgos específicos.</li>
+                    <li><strong>Cliente:</strong> El cliente es la persona o entidad que recibe o consume un servicio. Comprender las necesidades y expectativas del cliente es fundamental para la mejora del servicio.</li>
+                    <li><strong>Valor:</strong> El valor se refiere a la percepción del cliente sobre la utilidad del servicio en relación con el costo. ITIL enfatiza la importancia de crear y mantener un valor que satisfaga a los clientes y las partes interesadas.</li>
+                    <li><strong>Mejora Continua:</strong> La mejora continua es un enfoque sistemático para evaluar y mejorar los servicios y procesos de TI. Implica el análisis constante de la efectividad y eficiencia, así como la implementación de cambios para aumentar la calidad del servicio.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección del modelo ITIL con carrusel automático -->
+    <!-- Sección del modelo ITIL con carrusel automático -->
+<section id="itil-model" class="container mt-5">
+    <h2 class="section-title">Modelo ITIL</h2>
+    <div class="content-box">
+        <p>ITIL se estructura en cinco etapas del ciclo de vida de los servicios: Estrategia, Diseño, Transición, Operación y Mejora Continua. Cada una de estas fases se centra en aspectos específicos de la gestión de servicios. La etapa de Estrategia se ocupa de definir la dirección y el valor que los servicios aportan al negocio. El Diseño se enfoca en planificar y diseñar servicios que satisfagan las necesidades del cliente. La Transición se encarga de implementar y poner en marcha los servicios de manera controlada. La Operación se centra en la entrega y soporte diario de los servicios, mientras que la Mejora Continua busca optimizar los procesos y servicios de manera constante, asegurando que se alineen con las expectativas cambiantes de los clientes y las metas organizacionales.</p>
+
+        <!-- Carrusel de línea de tiempo de ITIL -->
+        <div id="itilTimelineCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+            <!-- Indicadores -->
+            <ol class="carousel-indicators">
+                <li data-target="#itilTimelineCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#itilTimelineCarousel" data-slide-to="1"></li>
+                <li data-target="#itilTimelineCarousel" data-slide-to="2"></li>
+                <li data-target="#itilTimelineCarousel" data-slide-to="3"></li>
+                <li data-target="#itilTimelineCarousel" data-slide-to="4"></li>
+            </ol>
+        
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <!-- ITIL V1 -->
+                <div class="carousel-item active">
+                    <div class="timeline-itil text-center">
+                        <h3>ITIL V1 (1989)</h3>
+                        <img src="https://www.enevasys.com/wp-content/uploads/2020/06/June-05-768x406.png" alt="ITIL V1" class="img-fluid">
+                        <p>Lanzamiento de la primera versión de ITIL por la CCTA en el Reino Unido, centrada en estandarizar las operaciones de TI en el sector público. Esta versión estableció una base para la gestión de servicios de TI.</p>
+                    </div>
+                </div>
+                <!-- ITIL V2 -->
+                <div class="carousel-item">
+                    <div class="timeline-itil text-center">
+                        <h3>ITIL V2 (2001)</h3>
+                        <img src="https://www.researchgate.net/profile/Abderrahim-Tragha/publication/303287919/figure/fig1/AS:453832028233728@1485213395569/Books-Version-ITIL-2.png" alt="ITIL V2" class="img-fluid">
+                        <p>Expansión de ITIL con enfoque en procesos clave como la gestión de incidentes y el catálogo de servicios, ampliándose al sector privado. Introdujo un conjunto de procesos mejor definidos y herramientas para la gestión de servicios.</p>
+                    </div>
+                </div>
+                <!-- ITIL V3 -->
+                <div class="carousel-item">
+                    <div class="timeline-itil text-center">
+                        <h3>ITIL V3 (2007)</h3>
+                        <img src="https://images.cdn2.buscalibre.com/fit-in/360x360/e7/38/e738c8d3d8598b11016536add55cbdea.jpg" alt="ITIL V3" class="img-fluid">
+                        <p>Introducción del enfoque de ciclo de vida del servicio con cinco etapas, destacando la importancia de la mejora continua. Esta versión proporcionó un marco más completo y centrado en el cliente para la gestión de servicios.</p>
+                    </div>
+                </div>
+                <!-- ITIL 2011 Update -->
+                <div class="carousel-item">
+                    <div class="timeline-itil text-center">
+                        <h3>ITIL 2011 Update</h3>
+                        <img src="https://images.cdn2.buscalibre.com/fit-in/360x360/63/54/6354e9e2e6ee6add76e7af3259da9e72.jpg" alt="ITIL 2011" class="img-fluid">
+                        <p>Actualización de ITIL V3, refinando procesos y alineando mejor los servicios de TI con las necesidades del negocio. Se centró en la integración de la gestión de servicios en todas las áreas de la organización.</p>
+                    </div>
+                </div>
+                <!-- ITIL V4 -->
+                <div class="carousel-item">
+                    <div class="timeline-itil text-center">
+                        <h3>ITIL V4 (2019)</h3>
+                        <img src="https://www.ediciones-eni.com/libro/itil-4-entender-el-enfoque-y-adoptar-las-buenas-practicas-9782409027383_XL.webp" alt="ITIL V4" class="img-fluid">
+                        <p>Última versión con un enfoque en la co-creación de valor y la integración de metodologías ágiles, DevOps y Lean. ITIL V4 enfatiza la adaptabilidad y la colaboración en un entorno tecnológico en constante cambio.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Controles de navegación -->
+            <a class="carousel-control-prev" href="#itilTimelineCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#itilTimelineCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+        
+    </div>
+</section>
+
+    <!-- Sección de bibliografía -->
+    <section id="bibliography" class="container mt-5">
+        <h2 class="section-title">Bibliografía</h2>
+        <div class="content-box">
+            <ul>
+                <li>Office of Government Commerce. (2007). <em>ITIL: Service Strategy</em>. The Stationery Office.</li>
+               
+                <li>ISO/IEC 20000-1:2018. (2018). <em>Information technology — Service management — Part 1: Service management system requirements</em>. International Organization for Standardization.</li>
+                <li>IT Governance Institute. (2012). <em>COBIT 5: A Business Framework for the Governance and Management of Enterprise IT</em>. IT Governance Institute.</li>
+                <li>Becker, J. (2015). <em>Implementing ITIL Change Management</em>. IT Governance Ltd.</li>
+                <li>Van Bon, J. (2014). <em>ITIL 2011 Edition: A Pocket Guide</em>. Van Haren Publishing.</li>
+                <li>Gartner. (2020). <em>ITIL: The Complete Overview</em>. Gartner Research.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 @MARYLIN</p>
+    </footer>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
